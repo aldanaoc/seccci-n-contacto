@@ -1,2 +1,2 @@
-# seccci-n-contacto
-editando la sección de contacto
+# secccion-contacto
+editando la sección de contacto. vamos a editar la sección contacto por acá
