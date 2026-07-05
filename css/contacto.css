@@ -21,7 +21,10 @@ html{
   color: #f5f7fa; 
 }
 .titulo button{
-  background-color: #0a3d62;
+  background: #0A3D62;
+  background: linear-gradient(180deg,rgba(10, 61, 98, 1) 2%,
+  rgba(10, 61, 98, 0.99) 11%, rgba(20, 77, 131, 0.99) 41%,
+  rgba(54, 135, 249, 0.81) 100%);
   color: #f5f7fa;
   border: none;
   border-radius: 50px;
