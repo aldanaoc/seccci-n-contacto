@@ -14,19 +14,11 @@ html{
   justify-content: center;
   align-items: center;
 }
+
 .titulo {
   text-align: center;
   padding: 40px;
   margin-top: 0px;
-  color: #f5f7fa; 
-}
-.titulo button{
-  background-color: #0a3d62;
-  color: #f5f7fa;
-  border: none;
-  border-radius: 50px;
-  padding: 16px 36px;
-  cursor: pointer;
 }
 
 .contenedor .card {
@@ -54,7 +46,7 @@ iframe {
   padding: 40px;
 }
 
-/*CONTACTO*/
+/*FORMULARIO DE CONTACTO*/
 .form{
   width: 100%;
   height: 100vh;
@@ -62,33 +54,9 @@ iframe {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 100px;
 }
-/* redes sociales del centro */
-.form .redes{
-  margin-left: 8%;
-}
-.redes a{
-  background-color: #f5f7fa;
-}
-.redes a:hover{
-  background-color: #f5f7fa;
-  scale: 1.1;
-}
-.redes img{
-  width: 40px;
-  height: 40px;
-}
-/* formulario  */
 .container_formulario{
   display: flex;
-  justify-content: center;
-  padding: 36px;
-  background: #0A3D62;
-  background: linear-gradient(180deg,rgba(10, 61, 98, 1) 2%,
-   rgba(10, 61, 98, 0.99) 11%, rgba(20, 77, 131, 0.99) 41%,
-  rgba(54, 135, 249, 0.81) 100%);
-  color: aliceblue;
-  border-radius: 14% 0% 10% 0% / 14% 0% 10% 0% 
+  justify-content: center;  
 }
 
