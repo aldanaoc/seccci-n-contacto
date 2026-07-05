@@ -1,4 +1,7 @@
 /* SECCIÓN CONTACTO */
+html{
+  scroll-behavior: smooth;
+}
 .portada{
   /* imagen de fondo (CAMBIAR) */
   width: 100%;
@@ -43,7 +46,16 @@ iframe {
 }
 
 /*FORMULARIO DE CONTACTO*/
+.form{
+  width: 100%;
+  height: 100vh;
+  max-height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .container_formulario{
   display: flex;
-  justify-content: center;   
+  justify-content: center;  
 }
+
