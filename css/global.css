@@ -234,4 +234,22 @@ nav a {
   .modal-content {
     width: 90%;
   }
+   .titulo button{
+    background: linear-gradient(135deg, #2d6a4f, #40916c);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 35px;
+    margin-top: 25px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0,0,0,.25);
+    transition: all .3s ease;
+}
+
+.titulo button:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0,0,0,.35);
+}
 }
