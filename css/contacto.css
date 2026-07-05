@@ -19,6 +19,14 @@ html{
   padding: 40px;
   margin-top: 0px;
 }
+.titulo button{
+  background-color: #0a3d62;
+  color: #f5f7fa;
+  border: none;
+  border-radius: 50px;
+  padding: 16px 36px;
+  cursor: pointer;
+}
 
 .contenedor .card {
   width: 350px;
@@ -55,6 +63,7 @@ iframe {
   align-items: center;
   gap: 100px;
 }
+/* redes sociales del centro */
 .form .redes{
   margin-left: 8%;
 }
@@ -66,8 +75,8 @@ iframe {
   scale: 1.1;
 }
 .redes img{
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
 }
 .container_formulario{
   display: flex;
