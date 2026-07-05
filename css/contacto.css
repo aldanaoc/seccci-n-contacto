@@ -55,12 +55,26 @@ iframe {
   align-items: center;
   gap: 100px;
 }
+.form .redes{
+  margin-left: 8%;
+}
+.redes a{
+  background-color: #f5f7fa;
+}
+.redes a:hover{
+  background-color: #f5f7fa;
+  scale: 1.1;
+}
+.redes img{
+  width: 48px;
+  height: 48px;
+}
 .container_formulario{
   display: flex;
   justify-content: center;
   padding: 36px;
   background-color: #0a3d62;
   color: aliceblue;
-  border-radius: 25px;
+  border-radius: 16px;
 }
 
