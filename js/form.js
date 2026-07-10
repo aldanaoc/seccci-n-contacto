@@ -1,4 +1,7 @@
 // arrancamos con lo del formulario
+const formulario = document.getElementById("formulario");
+
+
 function mensajeUsuario() {
     const nombre = document.getElementById("nombre").value;
     const apellido = document.getElementById("apellido").value;
