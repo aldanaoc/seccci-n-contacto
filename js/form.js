@@ -12,10 +12,15 @@ function mensajeUsuario() {
     const telefono = document.getElementById("telefono").value.trim();
     const asunto = document.getElementById("asunto").value.trim();
     const mensaje = document.getElementById("mensaje").value.trim();
-        if (nombre === "" || apellido === "" || email === "" || telefono === "" || asunto === "" || mensaje === "") {
-            alert("Complete todos los campos, por favor.");
-            return;
-        }
+    let valido = true;
+
+    // errores
+    if(nombre===""){
+        mostrarError("nombre","Ingrese su nombre");
+        valido = false;
+    }
+    
+
     alert("¡Consulta enviada! En un momente nos contactamos con vos.");
     document.querySelector("form").reset();
 }
