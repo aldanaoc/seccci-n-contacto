@@ -33,6 +33,39 @@ const validadores = {
         return "";
     }
 };
+function mostrarError(idCampo, mensaje) {
+    const spanError = document.getElementById(`${idCampo}-error`);
+    const input = document.getElementById(idCampo);
+ 
+    if (spanError && input) {
+        spanError.textContent = mensaje;
+        input.style.borderColor = "#EF4444";
+    }
+}
+function limpiarError(idCampo) {
+    const spanError = document.getElementById(`${idCampo}-error`);
+    const input = document.getElementById(idCampo);
+ 
+    if (spanError && input) {
+        spanError.textContent = "";
+        input.style.borderColor = "";
+    }
+}
+function validarCampo(fielId, value) {
+    const validator = validators[fielId];
+    if (validator) {
+        const error = validator(value);
+        if (error) {
+            showError(fieldId, error);
+            return false;
+        } else {
+            clearError(fieldId);
+            return true;
+        }
+    }
+    return true;
+}
+
 
 function mensajeUsuario() {
     const nombre = document.getElementById("nombre").value.trim();
