@@ -263,15 +263,15 @@
         <div class="container_formulario">
          <form id="formulario">
           <!-- Apellido y nombre -->
-           <label for="apellido">Apellidos y</label>
-           <span class="error" id="apellido-error"></span>
-            <label for="nombre">nombres * </label>
-            <span class="error" id="nombre-error"></span>
-            <br>
-            <input type="text" id="apellido" placeholder="Apellido/s" required>
-           <br> <br>
-           <input type="text" id="nombre" placeholder="Nombre/s" required>
-           <br>
+           <div class="nombrecompleto">
+              <label for="apellido">Apellido *</label>
+              <input type="text" id="apellido" placeholder="Apellido/s" required>
+              <span class="error" id="apellido-error"></span>
+              <br> <br>
+              <label for="nombre">Nombre * </label>
+              <input type="text" id="nombre" placeholder="Nombre/s" required>
+              <span class="error" id="nombre-error"></span>
+           </div>
            <br>
             <!-- Teléfono -->
            <label for="telefono">Teléfono</label>
