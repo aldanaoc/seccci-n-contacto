@@ -1,14 +1,17 @@
 // arrancamos con lo del formulario
 const formulario = document.getElementById("formulario");
-
+formulario.addEventListener("submit", function(e){
+    e.preventDefault();
+    mensajeUsuario();
+});
 
 function mensajeUsuario() {
-    const nombre = document.getElementById("nombre").value;
-    const apellido = document.getElementById("apellido").value;
-    const email =document.getElementById("email").value;
-    const telefono = document.getElementById("telefono").value;
-    const asunto = document.getElementById("asunto").value;
-    const mensaje = document.getElementById("mensaje").value;
+    const nombre = document.getElementById("nombre").value.trim();
+    const apellido = document.getElementById("apellido").value.trim();
+    const email =document.getElementById("email").value.trim();
+    const telefono = document.getElementById("telefono").value.trim();
+    const asunto = document.getElementById("asunto").value.trim();
+    const mensaje = document.getElementById("mensaje").value.trim();
         if (nombre === "" || apellido === "" || email === "" || telefono === "" || asunto === "" || mensaje === "") {
             alert("Complete todos los campos, por favor.");
             return;
