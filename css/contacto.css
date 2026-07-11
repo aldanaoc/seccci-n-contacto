@@ -137,6 +137,14 @@ iframe {
   color: grey; /*cambiar al de la info de contacto*/
   background: #ffffff;
 }
+.asunto-otro{
+  width: 100%;
+  padding: 16px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  margin-top: 8px;
+  box-sizing: border-box;
+}
 textarea{
   border-radius: 10px;
   width: 100%;
