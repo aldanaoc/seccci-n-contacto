@@ -71,10 +71,11 @@ iframe {
 }
 .contactoyform{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   width: 95%;
-  gap: 100px;
+  gap: 64px;
 }
 /* redes sociales del centro */
 .form .redes{
