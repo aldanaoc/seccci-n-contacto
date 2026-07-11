@@ -138,12 +138,16 @@ iframe {
   background: #ffffff;
 }
 .asunto-otro{
+  display: none; /*por ahora*/
   width: 100%;
   padding: 16px;
   border-radius: 10px;
   border: 2px solid transparent;
   margin-top: 8px;
   box-sizing: border-box;
+}
+.asunto-otro.mostrar{
+  display: block;
 }
 textarea{
   border-radius: 10px;

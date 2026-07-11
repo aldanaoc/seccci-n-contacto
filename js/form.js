@@ -1,6 +1,9 @@
 // arrancamos con lo del formulario
 const formulario = document.getElementById("formulario");
 const formMessage = document.getElementById("form-message"); // mensaje del form
+// otro asunto
+const asuntoSelect = document.getElementById("asunto");
+const otroAsuntoInput = document.getElementById("otro-asunto");
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -27,9 +30,18 @@ const validadores = { // teléfono opcional. se puede modificar
         return "";
     },
  
-
     asunto: (valor) => {
         if (!valor) return "Seleccione un motivo de consulta";
+        return ""; // ya no valida el texto de "otro" acá
+    },
+
+    "otro-asunto": (valor) => {
+        // solo exige contenido si el select está en "otro"
+        if (asuntoSelect.value !== "otro") return "";
+        
+        const texto = valor.trim();
+        if (!texto) return "Escriba su motivo de consulta";
+        if (texto.length < 10) return "El motivo debe tener al menos 10 caracteres";
         return "";
     },
  
@@ -87,6 +99,7 @@ Object.keys(validadores).forEach((idCampo) => {
         }
     });
 });
+
 // validar form
 function validarForm(datos) {
     let isValid = true;
@@ -114,6 +127,19 @@ function showFormMessage(message, type) {
         }, 5000);
     }
 }
+// asunto: otros
+asuntoSelect.addEventListener("change", () => {
+    if (asuntoSelect.value === "otro") {
+        otroAsuntoInput.classList.add("mostrar");
+    }
+    else {
+        otroAsuntoInput.classList.remove("mostrar");
+        otroAsuntoInput.value = "";
+        limpiarError("otro-asunto");
+    }
+});
+
+
 formulario.addEventListener('submit', async (e) => {
     e.preventDefault();
     const datos = {
@@ -121,7 +147,10 @@ formulario.addEventListener('submit', async (e) => {
     apellido : document.getElementById("apellido").value.trim(),
     email : document.getElementById("email").value.trim(),
     telefono : document.getElementById("telefono").value.trim(),
-    asunto : document.getElementById("asunto").value.trim(),
+    asunto: asuntoSelect.value === "otro" 
+        ? otroAsuntoInput.value.trim() 
+        : asuntoSelect.value,
+    "otro-asunto": otroAsuntoInput.value.trim(),
     mensaje : document.getElementById("mensaje").value.trim(),
     
     };
