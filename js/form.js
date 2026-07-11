@@ -134,7 +134,7 @@ formulario.addEventListener('submit', async (e) => {
     const submitButton = formulario.querySelector('button[type=\"submit\"]');
     const originalButtonText = submitButton.innerHTML;
     submitButton.disabled = true;
-    submitButton.innerHTML = '<i class=\"fas fa-spinner fa-spin\"></i> Enviando...';
+    submitButton.innerHTML = 'Enviando...';
     
     try {
         // Submit form via AJAX (a modificar si es neceario)
