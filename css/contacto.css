@@ -134,8 +134,12 @@ iframe {
   cursor: pointer;
 }
 .opciones option{
-  color: grey;
+  color: grey; /*cambiar al de la info de contacto*/
   background: #ffffff;
+}
+textarea{
+  border-radius: 10px;
+  width: 100%;
 }
 /* mnesajes de error */
 .input-error{
