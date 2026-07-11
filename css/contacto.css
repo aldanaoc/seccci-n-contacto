@@ -65,8 +65,8 @@ iframe {
 /*VERDADERA SECCIÓN DE CONTACTO*/
 .form{
   width: 100%;
-  height: 100vh;
-  max-height: 800px;
+  min-height: 100vh;
+  padding: 60px 0px;
   gap: 100px;
 }
 .contactoyform{
@@ -131,6 +131,10 @@ iframe {
   color: grey;
   font-size: 15px;
   cursor: pointer;
+}
+.opciones option{
+  color: grey;
+  background: #ffffff;
 }
 /* mnesajes de error */
 .input-error{
