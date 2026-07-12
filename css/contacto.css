@@ -130,6 +130,18 @@ body {
   }
 }
 
+/*CSS INFO SEDES*/
+.contenedor .card {
+  width: 350px;
+  padding: 20px;
+}
+
+/* Imágenes y Mapas con dimensiones originales */
+.img_map {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
 
 .info {
   text-align: center;
