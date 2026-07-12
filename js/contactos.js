@@ -1,7 +1,7 @@
 // js mapas
 // vista previa del mapa
 const mapa = L.map('mapa').setView(
-    [-34.84961241149393, -58.49712021815266], 10); // esto es el zoom
+    [-34.72739677565428, -58.3035176815109], 10); // esto es el zoom
 // mapa que usa leafleat
 L.tileLayer(
     'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',

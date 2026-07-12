@@ -11,7 +11,8 @@ body {
   /* imagen de fondo (CAMBIAR) */
   width: 100%;
   height: 100vh;
-  background-image: url(../assets/images/fondocontactos.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(87, 86, 86, 0.35)),
+  url(../assets/images/fondocontactos.jpg);
   background-size: cover;
   background-position: center;
   /* contenido dentro */
