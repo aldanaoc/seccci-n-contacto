@@ -250,10 +250,10 @@ button[type="submit"] {
   box-sizing: border-box;     
   font-family: sans-serif;     
   font-size: 16px;
-  font-weight: 600;              
-  color: #0A3D62;               
+  font-weight: 560;              
+  color: #f1f5f9;               
   text-align: center;
-  background-color: #ffffff;    
+  background-color: #0A3D62;    
   border: none;                 
   border-radius: 10px;          
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
@@ -263,7 +263,9 @@ button[type="submit"] {
 }
 /* Efecto al pasar el cursor por encima */
 button[type="submit"]:hover {
-  background-color: #f1f5f9;    
+  background-color: #f1f5f9;   
+  color: #0A3D62;
+  font-weight: 600;
   transform: scale(0.98);     
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
