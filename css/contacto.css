@@ -64,34 +64,95 @@ iframe {
 
 /*VERDADERA SECCIÓN DE CONTACTO*/
 .form{
-  width: 100%;
-  min-height: 100vh;
-  padding: 60px 0px;
-  gap: 100px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px; 
+    background-color: #ffffff; 
+    padding: 60px 20px; 
+    box-sizing: border-box;
 }
-.contactoyform{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 95%;
-  gap: 64px;
+
+.form .contacto {
+    background-color: #ebe9e9; 
+    border: 1px solid #e2e8f0;  
+    border-radius: 20px;        
+    padding: 35px;              
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03); 
+    max-width: 400px;
+    height: fit-content;
 }
-/* redes sociales del centro */
+
+.form .contacto h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #0a3d62; 
+}
+
+.form .contacto p {
+    margin: 12px 0;
+    line-height: 1.5;
+    color: #334155;
+}
+
 .form .redes{
-  margin-left: 8%;
+    margin-left: 0;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    gap: 12px;
+    margin-top: 25px; 
+    width: 100%;
 }
+
 .redes a{
-  background-color: #f5f7fa;
+    background-color: #0a3d62; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px; 
+    width: 45px;   
+    height: 45px;
+    transition: all 0.2s ease;
 }
+
 .redes a:hover{
-  background-color: #f5f7fa;
-  scale: 1.1;
+    background-color: #1e3a8a; 
+    transform: scale(1.1); 
 }
+
 .redes img{
-  width: 40px;
-  height: 40px;
+    width: 24px; 
+    height: 24px;
+    object-fit: contain;
 }
+
+.redes-footer {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.redes-footer a {
+    background-color: #0a3d62;
+    color: #ffffff; 
+    text-decoration: none;
+    padding: 8px 16px; 
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: sans-serif;
+    white-space: nowrap;
+    transition: all 0.2s ease-in-out;
+}
+
+.redes-footer a:hover {
+    background-color: #1e3a8a;
+    transform: scale(0.94);
+}
+
 
 
 /* FORMULARIO FORMULARIO formulario  */
