@@ -11,27 +11,27 @@ L.tileLayer(
 // const marker = L.marker([51.5, -0.09]).addTo(mapa);
 const sedes=[
     {
-    nombre: "Sede Temperley",
+    nombre: "CFP Temperley",
     latitud: -34.77570204343717,
     longitud: -58.40198213327116
     },
     {
-    nombre: "Morón",
+    nombre: "CFP Morón",
     latitud: -34.64629607033438,
     longitud: -58.619208000115584
     },
     {
-    nombre: "La plata",
+    nombre: "CFP La plata",
     latitud: -34.89233683791563,
     longitud: -57.96973767355588
     },
     {
-    nombre: "San Justo",
+    nombre: "CFP San Justo",
     latitud: -34.681335009697804,
     longitud: -58.575417602336415
     },
     {
-    nombre: "San Martín",
+    nombre: "CFP San Martín",
     latitud: -34.571348853130154,
     longitud: -58.5379340984812
     },
@@ -39,7 +39,7 @@ const sedes=[
 sedes.forEach((sede)=>{
     L.marker(
         [sede.latitud,sede.longitud]
-    ).addTo(mapa);
+    ).addTo(mapa)bindPopup(sede.nombre);
 });
 
 
