@@ -1,7 +1,17 @@
 // js mapas
-var map = L.map('map').setView([51.505, -0.09], 13);
-// aññadir un marcador (?
-var marker = L.marker([51.5, -0.09]).addTo(map);
+// vista previa del mapa
+const mapa = L.map('mapa').setView(
+    [-34.84961241149393, -58.49712021815266], 11); // esto es el zoom
+// mapa que usa leafleat
+L.tileLayer(
+    'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+    { attribution:"© OpenStreetMap"}).addTo(mapa);
+
+// añadir un marcador (?
+// const marker = L.marker([51.5, -0.09]).addTo(mapa);
+const sedes=[
+
+]
 
 
 
