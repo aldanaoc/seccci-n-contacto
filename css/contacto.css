@@ -90,6 +90,14 @@ body {
 .contenedor-slider .card {
   flex: 0 0 350px; 
   margin: 0;
+  background-color: #ebe9e9;
+}
+.contenedor-slider .card a{
+  text-decoration: none;
+}
+.contenedor-slider .card a:hover{
+  font-weight: 600;
+  text-decoration: underline;
 }
 
 /* Botones de navegación */
