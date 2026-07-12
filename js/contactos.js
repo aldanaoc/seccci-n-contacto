@@ -10,8 +10,36 @@ L.tileLayer(
 // añadir un marcador (?
 // const marker = L.marker([51.5, -0.09]).addTo(mapa);
 const sedes=[
+    {
+    nombre: "Temperley",
+    latitud: -34.77570204343717,
+    longitud: -58.40198213327116
+    },
+    {
+    nombre: "Morón",
+    latitud: -34.64629607033438,
+    longitud: -58.619208000115584
+    },
+    {
+    nombre: "La plata",
+    latitud: -34.89233683791563,
+    longitud: -57.96973767355588
+    },
+    {
+    nombre: "San Justo",
+    latitud: -34.681335009697804,
+    longitud: -58.575417602336415
+    },
+    {
+    nombre: "San Martín",
+    latitud: -34.571348853130154,
+    longitud: -58.5379340984812
+    },
 
 ]
+
+
+
 
 
 
