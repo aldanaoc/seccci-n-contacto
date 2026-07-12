@@ -2,6 +2,11 @@
 html{
   scroll-behavior: smooth;
 }
+body {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: aparecerDeslizando 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
 .portada{
   /* imagen de fondo (CAMBIAR) */
   width: 100%;
@@ -256,11 +261,6 @@ button[type="submit"]:hover {
 }
 button[type="submit"]:active {
   transform: scale(0.95);       
-}
-body {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: aparecerDeslizando 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 }
 
 @keyframes aparecerDeslizando {
