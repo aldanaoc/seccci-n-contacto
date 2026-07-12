@@ -44,7 +44,46 @@ sedes.forEach((sede)=>{
 
 
 
+// Slider by marcos
+document.addEventListener("DOMContentLoaded", () => {
+    const track = document.querySelector(".slider-track");
+    const prevBtn = document.querySelector(".prev-btn");
+    const nextBtn = document.querySelector(".next-btn");
+    
+    if (!track || !prevBtn || !nextBtn) return;
 
+    let index = 0;
+
+    function moveSlider(direction) {
+        const cards = document.querySelectorAll(".slider-track .card");
+        const cardWidth = cards[0].offsetWidth;
+        const gap = 30; // El mismo valor que pusimos en el CSS (gap: 30px)
+        const totalAmountOfCards = cards.length;
+        
+        // Calculamos cuántas tarjetas entran visibles en pantalla simultáneamente
+        const wrapperWidth = document.querySelector(".slider-wrapper").offsetWidth;
+        const visibleCards = Math.round(wrapperWidth / (cardWidth + gap));
+        const maxIndex = totalAmountOfCards - visibleCards;
+
+        if (direction === "next") {
+            index = index >= maxIndex ? 0 : index + 1; // Si llega al final, vuelve al inicio
+        } else {
+            index = index <= 0 ? Math.max(0, maxIndex) : index - 1; // Si va hacia atrás en el inicio, va al final
+        }
+
+        const amountToMove = index * (cardWidth + gap);
+        track.style.transform = `translateX(-${amountToMove}px)`;
+    }
+
+    nextBtn.addEventListener("click", () => moveSlider("next"));
+    prevBtn.addEventListener("click", () => moveSlider("prev"));
+
+    // Escucha cambios de tamaño de pantalla para evitar desajustes en el desplazamiento
+    window.addEventListener("resize", () => {
+        index = 0;
+        track.style.transform = "translateX(0px)";
+    });
+});
 
 
 
