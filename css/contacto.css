@@ -193,11 +193,11 @@ iframe {
   cursor: pointer;
 }
 .opciones option{
-  color: grey; /*cambiar al de la info de contacto*/
+  color: grey; 
   background: #ffffff;
 }
 .asunto-otro{
-  display: none; /*por ahora*/
+  display: none; 
   width: 100%;
   padding: 16px;
   border-radius: 10px;
@@ -225,7 +225,6 @@ textarea{
 }
 /*ESTILOS PARA EL BOTÓN ENVIAR */
 button[type="submit"] {
-  /* Tamaño y Espaciado */
   display: block;               
   width: 100%;                  
   min-height: 48px;             
