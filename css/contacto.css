@@ -223,26 +223,49 @@ textarea{
   margin-top: 4px;
   min-height: 1em;
 }
+/* =========================================
+   ESTILOS PARA EL BOTÓN ENVIAR
+   ========================================= */
+
 .btn-enviar {
-  width: 100%;                  /* Ocupa todo el ancho del formulario */
-  padding: 12px 24px;           /* Espacio interno para hacerlo grande */
+  /* Tamaño y Espaciado */
+  display: block;               /* Asegura que se comporte como bloque */
+  width: 100%;                  /* Ocupa todo el ancho disponible del formulario */
+  min-height: 48px;             /* Altura cómoda para dar click (buena usabilidad) */
+  padding: 12px 24px;           /* Espaciado interno */
+  margin-top: 20px;             /* Lo separa del textarea de arriba */
+  box-sizing: border-box;       /* Evita que el padding rompa el ancho del formulario */
+
+  /* Tipografía */
+  font-family: sans-serif;      /* Misma fuente que tus enlaces del footer */
   font-size: 16px;              /* Texto claro y legible */
-  font-weight: bold;            /* Texto en negrita */
-  color: #0A3D62;               /* Texto azul oscuro de tu paleta */
-  background-color: #ffffff;    /* Fondo blanco para que resalte en el degradado azul */
-  border: none;                 /* Elimina el borde gris feo de fábrica */
-  border-radius: 10px;          /* Misma curvatura de tus inputs */
-  cursor: pointer;              /* Cambia el cursor a la mano de click */
-  margin-top: 15px;             /* Separa el botón del textarea anterior */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para dar volumen */
-  transition: all 0.2s ease-in-out; /* Transición suave para el efecto hover */
+  font-weight: 700;             /* Texto en negrita */
+  color: #0A3D62;               /* Azul oscuro (color principal de tu formulario) */
+  text-align: center;
+
+  /* Estética del Botón */
+  background-color: #ffffff;    /* Fondo blanco impecable para contrastar con tu azul */
+  border: none;                 /* Elimina por completo el borde gris de fábrica */
+  border-radius: 10px;          /* Misma curvatura exacta de tus inputs */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra suave para darle relieve */
+  
+  /* Interactividad y Animación */
+  cursor: pointer;              /* Muestra la mano para hacer click */
+  transition: all 0.2s ease-in-out; /* Transición suave para los efectos */
 }
 
+/* Efecto al pasar el cursor por encima */
 .btn-enviar:hover {
-  background-color: #f8fafc;    /* Blanco ligeramente grisáceo al pasar el mouse */
-  transform: scale(0.98);       /* Efecto de hundimiento al presionarlo (como tus redes) */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f1f5f9;    /* Se vuelve un tono grisáceo muy sutil */
+  transform: scale(0.98);       /* Efecto de hundimiento (igual que tus redes) */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Reduce la sombra al hundirse */
 }
+
+/* Efecto cuando mantienen presionado el click */
+.btn-enviar:active {
+  transform: scale(0.95);       /* Se hunde un poco más al hacer click real */
+}
+
 body {
     opacity: 0;
     transform: translateY(20px);
