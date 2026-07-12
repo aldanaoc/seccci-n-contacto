@@ -39,7 +39,7 @@ const sedes=[
 sedes.forEach((sede)=>{
     L.marker(
         [sede.latitud,sede.longitud]
-    ).addTo(mapa)bindPopup(sede.nombre);
+    ).addTo(mapa).bindPopup(sede.nombre);
 });
 
 
